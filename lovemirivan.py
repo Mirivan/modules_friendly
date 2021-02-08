@@ -1,11 +1,11 @@
-from .. import loader
-from asyncio import sleep
+from .. import loader
+import asyncio
 from collections import deque
-@loader.tds
-class LoveMirMod(loader.Module):
-	strings = {"name": "Love (Mirivan)"}
-	@loader.owner
-	async def lovemircmd(self, message):
+@loader.tds
+class LoveMirMod(loader.Module):
+	strings = {"name": "Love (Mirivan)"}
+	@loader.owner
+	async def lovemircmd(self, message):
 		deq = deque(list('❤️🧡💛💚💙💜🖤🤍'))
         try:
             for _ in range(48):
